@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  /* Opcional: para evitar overflow */
+  min-height: 0;
+}
+
+/* MainLayout.module.css */
+.desktopContent {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: 0; /* Para evitar overflow */
+}
+
+.desktopMain {
+  flex: 1;
+  min-width: 0; /* Para que el contenido pueda hacer overflow-x si es necesario */
+  background: #0e2a47; /* Asegura el fondo azul */
+}

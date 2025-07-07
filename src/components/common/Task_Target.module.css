@@ -1,0 +1,148 @@
+.taskCard {
+  flex: 1 1 calc(50% - 1.5rem);
+  background: #0c243d;
+  border-radius: 12px ;
+  padding: 1.5rem;
+  box-shadow: -1px 0px 18px 11px rgb(0 0 0 / 8%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #ffffff;
+}
+
+.taskCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.taskTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.subtask {
+  font-style: italic;
+  color: #b8b8b8;
+}
+
+.attachments {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.detailButton {
+  margin-top: 1rem;
+  background-color: #37485a;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.detailButton:hover {
+  background-color: #37485a;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.closeButton {
+  margin-top: 1.5rem;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #c62828;
+}
+
+@media (max-width: 768px) {
+  .taskCard {
+    flex: 1 1 100%;
+  }
+}
+
+.estadoLabel {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 0;
+}
+
+.asignarButton {
+  margin-top: 0.7rem;
+  background-color: #43a047;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.asignarButton:hover {
+  background-color: #2e7031;
+}
+
+.updateButton {
+  margin-top: 0.7rem;
+  background-color: #1976d2;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.updateButton:hover {
+  background-color: #115293;
+}
+
+.deleteButton {
+  margin-top: 0.7rem;
+  background-color: #e53935;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.deleteButton:hover {
+  background-color: #c62828;
+}

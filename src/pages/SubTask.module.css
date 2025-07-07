@@ -1,0 +1,168 @@
+.taskPage {
+    padding: 50px;
+    min-height: 100vh;
+    height: auto;
+    background-color: white;
+    background-image: url('../assets/fondoTask.svg'); /* Ajusta la ruta si es necesario */
+    background-size: cover;      /* Para que cubra todo el contenedor */
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:
+        0 0 10px rgba(33, 33, 33, 0.5),
+        0 0 10px rgba(15, 15, 15, 0.4),
+        0 0 10px rgba(29, 29, 29, 0.3),
+        0 0 10px rgba(255, 255, 255, 0.91),
+        0 0 10px rgba(0, 0, 255, 0.1);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskPage header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  filter: drop-shadow(2px 4px 6px rgba(5, 5, 5, 0.811));
+}
+
+.addButton {
+  margin-top: 10px;
+  padding: 0.5rem 1.2rem;
+  background: #37485a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addButton:hover {
+  background: #223144;
+}
+
+/* Reutiliza los estilos de .modalOverlay y .modalContent de Task_Target.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modalTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #1976d2;
+  text-align: center;
+}
+
+.modalLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.subtasksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.subtaskBox {
+  background: #f5f8fa;
+  border-radius: 8px;
+  padding: 1rem 1rem 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  border: 1px solid #e3e8ee;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.subtaskHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.subtaskNumber {
+  background: #1976d2;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.15em 0.7em;
+  margin-right: 0.5em;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #bfc9d1;
+  border-radius: 5px;
+  padding: 0.45em 0.7em;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  border: 1.5px solid #1976d2;
+  background: #f0f6ff;
+}

@@ -1,0 +1,146 @@
+.notificacionesWrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notificacionesContainer {
+  max-width: 600px;
+  min-width: 400px;
+  margin: 40px auto 0 auto;
+  background: #0c243d;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  padding: 2.5rem 2rem 2rem 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  filter: brightness(0) invert(1);
+  margin-top: 8px;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.lista {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.cargando {
+  color: #b8b8b8;
+  text-align: center;
+}
+
+.vacio {
+  text-align: center;
+  color: #b8b8b8;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notificacion {
+  background: #132c47;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.nueva {
+  background: #1e3a5c;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(30,60,92,0.12);
+}
+
+.leida {
+  font-weight: 400;
+}
+
+.punto {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2196f3;
+  margin-right: 6px;
+}
+
+.mensaje {
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.fecha {
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  white-space: nowrap;
+}
+
+.leerMas {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #2196f3;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.leerMas:hover {
+  color: #1769aa;
+}
+
+@media (max-width: 480px) {
+  .notificacionesContainer {
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .mensaje {
+    font-size: 1rem;
+  }
+
+  .fecha {
+    font-size: 0.8rem;
+  }
+
+  .leerMas {
+    font-size: 0.8rem;
+  }
+}

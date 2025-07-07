@@ -1,0 +1,27 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #0e2a47;
+    border-top: 1px solid #dee2e6;
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.5), 0 0 10px rgba(15, 15, 15, 0.4), 0 0 10px rgba(29, 29, 29, 0.3), 0 0 10px rgba(255, 255, 255, 0.91), 0 0 10px rgba(0, 0, 255, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.text_1 {
+    flex: 1;
+    font-size: 16px;
+}
+
+.text_2 {
+    flex: 1;
+    font-size: 16px;
+    text-align: right;
+}
