@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Task_Target from "../components/common/Task_Target";
 import styles from "./Task.module.css";
-import taskIcon from "/task.png";
+import taskIcon from "../assets/fondoTask.svg";
 
 interface Complejidad {
   cN_Id_complejidad: number;
