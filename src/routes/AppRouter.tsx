@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { ProtectedRoutes } from "./ProtectedRoutes";
 import AuthLayout from "../components/layout/AuthLayout";
 import LoginPage from "../pages/Login";
 import MainLayout from "../components/layout/MainLayout";
@@ -17,14 +18,16 @@ const AppRouter = () => (
       {/* Puedes agregar más rutas aquí */}
     </Route>
 
-    <Route element={<MainLayout />}>
-      <Route path="/task" element={<TaskPage />} />
-      <Route path="/subtask" element={<SubTask/>}/>
-      <Route path="/historial" element={<Historial/>}/>
-      <Route path="/perfil" element={<Perfil/>}/>
-      <Route path="/bitacora" element={<Bitacora/>}/>
-      <Route path="/usuarios" element={<Usuarios/>}/>
-      <Route path="/notificaciones" element={<Notificaciones/>}/>
+    <Route element={<ProtectedRoutes />}>
+      <Route element={<MainLayout />}>
+        <Route path="/task" element={<TaskPage />} />
+        <Route path="/subtask" element={<SubTask/>}/>
+        <Route path="/historial" element={<Historial/>}/>
+        <Route path="/perfil" element={<Perfil/>}/>
+        <Route path="/bitacora" element={<Bitacora/>}/>
+        <Route path="/usuarios" element={<Usuarios/>}/>
+        <Route path="/notificaciones" element={<Notificaciones/>}/>
+      </Route>
     </Route>
   </Routes>
 );
